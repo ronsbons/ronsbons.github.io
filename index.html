@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <!-- JS -->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <title>Ronni Louie</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-flex">
+        <h1>Ronni Louie</h1>
+        <nav>
+          <ul>
+            <li class="nav-list"><a href="#portfolio">Portfolio</a></li>
+            <li class="nav-list"><a href="#about">About Me</a></li>
+            <li class="nav-list"><a href="#skills">Skills</a></li>
+            <li class="nav-list"><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrapper">
+      <!-- Portfolio -->
+      <!-- Carousel with sliding images -->
+      <!-- Include arrows or dots for user to click -->
+      <section id="portfolio">
+        <h2>Projects</h2>
+        <div class="carousel">
+          <div class="slide">
+            <img src="images/monument-landing.png" class="carousel">
+            <h3 class="caption">Monument Landing Page</h3>
+          </div>
+          <div class="slide">
+            <img src="images/monument-blog-2.png" class="carousel">
+            <h3 class="caption">Monument Blog</h3>
+          </div>
+          <div class="slide">
+            <img src="images/racer-game.png" class="carousel">
+            <h3 class="caption">Racer Game</h3>
+          </div>
+          <div class="slide">
+            <img src="images/shopping-cart.png" class="carousel">
+            <h3 class="caption">Shopping Cart</h3>
+          </div>
+          <div class="slide">
+            <img src="images/geoquakes.png" class="carousel">
+            <h3 class="caption">Geoquakes Lab</h3>
+          </div>
+          <div class="carousel-nav">
+            <!-- add clickable arrows/dots here -->
+            <a class="arrow">&#9665;</a>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <a class="arrow">&#9655;</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Me -->
+      <section id="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+          <div class="about-col">
+            <img src="images/about-me.jpg">
+          </div>
+          <div class="about-col">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam harum repudiandae perspiciatis eveniet, cupiditate facere corporis minima sit accusamus earum, optio quis reiciendis nisi possimus illum, dignissimos explicabo quae commodi.</p>
+          </div>
+          <div class="about-col">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, illo quas, aliquid atque vero corporis totam doloremque saepe adipisci in quidem amet asperiores beatae. Dolore odio rem distinctio tenetur quod.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills/Interests? -->
+      <section id="skills">
+        <div class="skills-1">
+          <h2>Skills</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript & jQuery</li>
+            <li>Event Planning</li>
+          </ul>
+        </div>
+
+        <div class="skills-2">
+          <h2>Previous Work Experience</h2>
+          <ul>
+            <li>General Assembly <em>(Web Development Immersive)</em> - 2019</li>
+            <li>Swisher Productions <em>(Event Producer)</em> - 2014-2018</li>
+            <li>CBS Films <em>(Regional Publicity & Promotions Coordinator)</em> - 2012-2014</li>
+          </ul>
+        </div>
+
+        <div class="skills-3">
+          <h2>Education</h2>
+          <ul>
+            <li>General Assembly <em>(Web Development Immersive)</em> - 2019</li>
+            <li>University of Southern California <em>(B.S., Business Administration)</em> - 2006-2010</li>
+            <li>University of Melbourne <em>(International Exchange Program)</em> - 2009</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Contact Form -->
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form method="PUT" action="#">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Name" />
+            <input type="email" name="email" placeholder="Email Address" />
+          </div>
+          <div class="form-row">
+            <textarea name="message" rows="10" placeholder="What's up?"></textarea>
+          </div>
+          <div class="form-row">
+            <input type="submit" value="Submit" />
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-flex">
+        <p>&copy; Ronni Louie</p>
+      </div>
+      <div class="footer-flex icons">
+        <a href="https://www.linkedin.com/in/ronni-louie/"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="https://www.instagram.com/ronsbons/"><i class="fab fa-instagram fa-2x"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>

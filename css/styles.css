@@ -1,0 +1,214 @@
+/* Global
+========================================*/
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+/* Push body down to allow for fixed nav on top*/
+.wrapper {
+  margin-top: 5em;
+  width: 100vw;
+}
+
+
+
+/* Text Styles
+========================================*/
+a {
+  text-decoration: none;
+}
+
+h2 {
+  text-align: center;
+}
+
+/* Header
+========================================*/
+header {
+  background-color: yellow;
+  padding: 0 1.25em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+/* To allow for left and right positioned items of the header */
+.header-flex {
+  align-items: center;
+  display: flex;
+  }
+
+/* To make h1 and nav occupy same width within the row */
+h1,
+nav {
+  flex: 1;
+}
+
+nav {
+  text-align: right;
+}
+
+/* To get list items to line up next to each other */
+.nav-list {
+  display: inline-block;
+  margin: 0 .63em;
+}
+
+
+
+
+/* Portfolio
+========================================*/
+/* [] TODO: make .carousel-nav clickable arrows/dots overlay photos */
+/* [] TODO: add hover color of clickable arrows/dots here */
+#portfolio {
+  background-color: red;
+}
+
+.carousel {
+  width: 100vw;
+}
+
+/* Setting position relative in order to keep caption absolute */
+.slide {
+  position: relative;
+}
+
+.slide:hover {
+  cursor: pointer;
+}
+
+/* Setting caption to be absolute relative to the picture */
+h3 {
+  bottom: 45%;
+  position: absolute;
+  text-align: center;
+  /*visibility: hidden;*/
+  width: 100%;
+}
+
+.carousel-nav {
+  text-align: center;
+}
+
+.prev,
+.dot,
+.next {
+
+}
+
+.arrow {
+  cursor: pointer;
+  font-size: 1.5em;
+  font-weight: bold;
+  transition: all .2s ease-in-out;
+}
+
+.arrow:hover {
+  background-color: gray;
+}
+
+.dot {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  height: .88em;
+  transition: all .2s ease-in-out;
+  width: .88em;
+}
+
+.dot:hover {
+  background-color: gray;
+}
+
+
+
+/* About Me
+========================================*/
+/* [] TODO: Make multi-column layout for content
+  use flexbox */
+
+#about {
+  background-color: blue;
+  padding: 5em;
+}
+
+/* Set flex container to make 3 columns */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Set width to about 30% of the viewport to make 3 columns */
+.about-col {
+  width: 30%;
+}
+
+/* To make picture in column 1 resize to the width of its parent column */
+.about-col img {
+  width: 100%;
+}
+
+
+/* Skills
+========================================*/
+#skills {
+  background-color: green;
+  padding: 5em;
+}
+
+/* Contact Form
+=========================================*/
+#contact {
+  background-color: purple;
+  padding: 8em;
+}
+
+/* Set flexbox container */
+.form-row {
+  display: flex;
+  margin: .63em;
+}
+
+/* To force each item within the flex container to take up equal space within */
+.form-row input,
+.form-row textarea {
+  flex: 1;
+  margin: 0 .63em;
+}
+
+
+/* Footer
+=========================================*/
+/* Set flexbox in order to left align name and right align icons */
+footer {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: .5em 3em;
+}
+
+.icons {
+  display: inline-block;
+  margin: 0 .63em;
+}
+
+.fa-linkedin,
+.fa-instagram {
+  margin: 0 .63em;
+}
+
+
+
+/* Media Queries
+=========================================*/
+/* [] TODO: Nav collapses into hamburger icon */
+  /* Hide nav links */
+  /* Or change display to in one column then use JS to slide down/up */
