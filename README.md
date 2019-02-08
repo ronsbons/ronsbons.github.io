@@ -11,7 +11,7 @@ Wireframe: https://wireframe.cc/N0ygf4
 ### References
 I used previous homework and exercises to aid my creating flexboxes.
 
-For the carousel slideshow of my past projects, I used this <a href="https://www.w3schools.com/howto/howto_js_slideshow.asp">W3Schools tutorial</a>.
+For the carousel slideshow of my past projects, I read this <a href="https://www.w3schools.com/howto/howto_js_slideshow.asp">W3Schools tutorial</a> and ultimately used <a href="https://getbootstrap.com/docs/4.0/components/carousel/">Bootstrap's carousel component</a>.
 
 I searched on Stack Overflow for many questions I had for the JS functions.
 To rotate content in and out of my skills section, I referenced this <a href="https://stackoverflow.com/questions/3670487/jquery-text-fade-transition-from-one-text-to-another">thread</a>.
