@@ -23,17 +23,22 @@
     <title>Ronni Louie</title>
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#navbar" data-offset="0">
     <header>
       <div class="header-flex">
         <h1>Ronni Louie</h1>
-        <nav>
-          <ul>
-            <li class="nav-list"><a href="#portfolio">Portfolio</a></li>
-            <li class="nav-list"><a href="#about">About Me</a></li>
-            <li class="nav-list"><a href="#skills">Skills</a></li>
-            <li class="nav-list"><a href="#contact">Contact</a></li>
-          </ul>
+        <nav id="navbar" class="dropdown">
+          <a class="hamburger btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars fa-lg"></i></a>
+
+          <div class="dropContainer">
+            <ul class="nav nav-pills justify-content-end" aria-labelledby="dropdownMenuLink">
+              <li class="nav-item"><a href="#portfolio" class="nav-link dropdown-item">Portfolio</a></li>
+              <li class="nav-item"><a href="#about" class="nav-link dropdown-item">About Me</a></li>
+              <li class="nav-item"><a href="#skills" class="nav-link dropdown-item">Skills</a></li>
+              <li class="nav-item"><a href="#contact" class="nav-link dropdown-item">Contact</a></li>
+            </ul>
+          </div>
+
         </nav>
       </div>
     </header>
@@ -45,6 +50,7 @@
       <section id="portfolio">
         <h2>Projects</h2>
         <!-- [] TODO: How to keep images all one height -->
+        <!-- [] TODO: How to do lightbox -->
         <div id="carouselWrapper" class="carousel slide" data-ride="carousel" data-interval=3000 data-pause="hover">
           <!-- Indicators -->
           <ol class="carousel-indicators">
@@ -109,7 +115,7 @@
 
       <!-- Skills/Interests? -->
       <section id="skills">
-        <div class="skills-1">
+        <div class="skillsSection">
           <h2>Skills</h2>
           <ul>
             <li>HTML</li>
@@ -119,7 +125,7 @@
           </ul>
         </div>
 
-        <div class="skills-2">
+        <div class="skillsSection">
           <h2>Previous Work Experience</h2>
           <ul>
             <li>General Assembly <em>(Web Development Immersive)</em> - 2019</li>
@@ -128,7 +134,7 @@
           </ul>
         </div>
 
-        <div class="skills-3">
+        <div class="skillsSection">
           <h2>Education</h2>
           <ul>
             <li>General Assembly <em>(Web Development Immersive)</em> - 2019</li>

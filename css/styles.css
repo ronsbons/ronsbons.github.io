@@ -4,6 +4,7 @@ body {
   box-sizing: border-box;
   font-family: sans-serif;
   font-size: 16px;
+  position: relative;
 }
 
 /* Push body down to allow for fixed nav on top*/
@@ -38,8 +39,6 @@ header {
 
 /* To allow for left and right positioned items of the header */
 .header-flex {
-  /* Vertically aligns to center*/
-  /* [] TO FIX: After added viewport meta tag, this alignment changed */
   align-items: center;
   display: flex;
   }
@@ -50,12 +49,12 @@ nav {
   flex: 1;
 }
 
-nav {
-  text-align: right;
+.hamburger {
+  display: none;
 }
 
 /* To get list items to line up next to each other */
-.nav-list {
+.nav-item {
   display: inline-block;
   margin: 0 .63em;
 }
@@ -125,6 +124,11 @@ nav {
 #skills {
   background-color: green;
   padding: 5em;
+  position: relative;
+}
+
+.skillsSection {
+
 }
 
 /* Contact Form
@@ -179,3 +183,33 @@ footer {
 /* [] TODO: Nav collapses into hamburger icon */
   /* Hide nav links */
   /* Or change display to in one column then use JS to slide down/up */
+@media screen and (max-width: 896px) {
+  .hamburger {
+    color: black;
+    display: block;
+    float: right;
+  }
+}
+
+@media screen and (max-width: 763px) {
+  /* To stack section verticallly vs. flex */
+  .about-container,
+  .form-row {
+    display: block;
+  }
+
+  /* To widen all lines to take up the whole space */
+  .about-col,
+  .form-row input,
+  .form-row textarea {
+    width: 100%;
+  }
+
+  .about-col img {
+    height: 50%;
+  }
+
+  .form-row input:first-child {
+    margin-bottom: .63em;
+  }
+}
