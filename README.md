@@ -5,8 +5,8 @@ This is my first project as a WDI student at General Assembly SF.  I have used t
 
 ---
 ## Technologies Used
--Bootstrap
--jQuery
+- Bootstrap
+- jQuery
 
 ### References
 I used previous homework and exercises to aid my creating flexboxes.
@@ -42,11 +42,11 @@ Finally, I went back to my CSS file to apply more styles to my liking.
 
 ---
 ## Unsolved Problems
--Getting all images in the carousel to be the same size, and therefore not interrupting the placement of the captions.
--Lightbox
+- Getting all images in the carousel to be the same size, and therefore not interrupting the placement of the captions.
+- Lightbox
 -Getting the nav links to highlight and scroll to the top of the section vs. at or after the section's headline
--Getting the nav to collapse into a dropdown hamburger menu upon resizing the window.  If you set the window to a normal size before loading the page, the nav appears normally, but if you resize it to a smaller window, the nav links do not collapse into the hamburger icon.  However, if you were to leave the window at the smaller size and reload or load the page, the hamburger contains the dropdown menu.  But upon resizing it back to a larger size, the hamburger icon and the full nav disappear completely.
--Getting the Skills section to animate and switch between divs vs. fade in and out the whole section.
+- Getting the nav to collapse into a dropdown hamburger menu upon resizing the window.  If you set the window to a normal size before loading the page, the nav appears normally, but if you resize it to a smaller window, the nav links do not collapse into the hamburger icon.  However, if you were to leave the window at the smaller size and reload or load the page, the hamburger contains the dropdown menu.  But upon resizing it back to a larger size, the hamburger icon and the full nav disappear completely.
+- Getting the Skills section to animate and switch between divs vs. fade in and out the whole section.
 
 
 
