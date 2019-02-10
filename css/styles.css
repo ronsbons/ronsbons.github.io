@@ -27,7 +27,13 @@ h3 {
   font-family: "Open Sans Condensed", sans-serif;
 }
 
+h1 {
+  color: white;
+  text-transform: uppercase;
+}
+
 h2 {
+  padding: .63em;
   text-align: center;
 }
 
@@ -65,7 +71,19 @@ nav {
   margin: 0 .63em;
 }
 
+.nav-link:hover {
+  background-color: transparent;
+  border-bottom: 2px solid white;
+  border-radius: 0px;
+  color: white;
+}
 
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  background-color: transparent;
+  border-bottom: 2px solid white;
+  border-radius: 0px;
+}
 
 
 /* Portfolio
@@ -104,7 +122,7 @@ nav {
 
 #about {
   background-color: #FFDE99;
-  padding: 5em;
+  padding: 3em 5em;
 }
 
 /* Set flex container to make 3 columns */
@@ -129,7 +147,7 @@ nav {
 ========================================*/
 #skills {
   background-color: #FFEABF;
-  padding: 5em;
+  padding: 3em 8em;
   position: relative;
 }
 
@@ -141,7 +159,7 @@ nav {
 =========================================*/
 #contact {
   background-color: #FFDE99;
-  padding: 8em;
+  padding: 4em 12em;
 }
 
 /* Set flexbox container */
@@ -153,8 +171,23 @@ nav {
 /* To force each item within the flex container to take up equal space within */
 .form-row input,
 .form-row textarea {
+  background-color: white;
+  border: 2px solid #4A85B2;
+  border-radius: 6px;
   flex: 1;
+  font-size: .75em;
   margin: 0 .63em;
+  padding: .5em 1em;
+}
+
+input[type="submit"] {
+  text-transform: uppercase;
+}
+
+input[type="submit"]:hover {
+  background-color: #4A85B2;
+  color: white;
+  cursor: pointer;
 }
 
 
@@ -169,6 +202,14 @@ footer {
   padding: .5em 3em;
 }
 
+.footer-flex {
+  align-items: center;
+}
+
+footer p {
+  color: white;
+}
+
 .icons {
   display: inline-block;
   margin: 0 .63em;
@@ -176,9 +217,15 @@ footer {
 
 .fa-linkedin,
 .fa-instagram {
+  color: black;
   margin: 0 .63em;
 }
 
+
+.fa-linkedin:hover,
+.fa-instagram:hover {
+  color: white;
+}
 
 
 /* Media Queries
@@ -189,11 +236,60 @@ footer {
 /* [] TODO: Nav collapses into hamburger icon */
   /* Hide nav links */
   /* Or change display to in one column then use JS to slide down/up */
-@media screen and (max-width: 896px) {
+@media screen and (max-width: 1003px) {
+  .nav-item {
+    margin: 0 .25em;
+  }
+}
+
+@media screen and (max-width: 906px) {
+  .nav-item {
+    margin: 0 .15em;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .nav-item {
+    margin: 0 .05em;
+  }
+}
+
+@media screen and (max-width: 854px) {
+  .nav-item {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 842px) {
   .hamburger {
-    color: black;
     display: block;
     float: right;
+  }
+
+  .btn-secondary {
+    background-color: transparent;
+    border-color: transparent;
+    color: black;
+  }
+
+  .btn-secondary:hover {
+    color: white;
+    background-color: transparent;
+    border-color: transparent;
+  }
+
+  .btn-secondary:focus {
+    box-shadow: none;
+  }
+
+  .nav-pills .nav-link.active {
+    border-bottom: 2px solid #4A85B2;
+    color: #4A85B2;
+  }
+
+  .nav-pills .nav-link:hover {
+    border-bottom: 2px solid #4A85B2;
+    color: #4A85B2;
   }
 }
 
@@ -211,11 +307,33 @@ footer {
     width: 100%;
   }
 
+  .about-col:first-child {
+    margin-bottom: 1em;
+  }
+
   .about-col img {
     height: 50%;
   }
 
   .form-row input:first-child {
     margin-bottom: .63em;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  h1 {
+    font-size: 2.4em;
+  }
+
+  #skills {
+    padding: 3em;
+  }
+
+  #contact {
+    padding: 2em 4em;
+  }
+
+  footer {
+    padding: .5em 1em;
   }
 }

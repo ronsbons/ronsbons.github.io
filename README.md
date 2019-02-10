@@ -26,7 +26,7 @@ Throughout this project, I edited this README file after completing or attemptin
 
 I started by going through the requirements that the site should contain.  I then created a wireframe to help me visually lay out my sections and what they might be.
 
-<!-- Insert wireframe photo here -->
+![](reference/wireframe.JPG)
 
 From there, I wrote pseudocode in my HTML, CSS, and JS files to write down what content I needed to include, what styles or layout I needed to apply, and what functions to implement.  After ensuring I had all points and requirements written in pseudocode, I began to build out my HTML, starting with a boilerplate.
 
