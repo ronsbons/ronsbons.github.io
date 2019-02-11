@@ -58,4 +58,4 @@ Without fail, I struggle with flexbox, so I was very happy to achieve the flexbo
 
 I searched for methods to create a carousel from scratch, but struggled with the tutorials and community posts I found.  I let myself look at the given Bootstrap version, and it all made sense and worked!  However, no matter how many times I attempted at creating a modal to create a lightbox, I did not succeed.  I tried Bootstrap's modal component; I googled other modal and lightbox tutorials.
 
-My biggest challenges are the problems I couldn't solve listed above.
+My biggest challenges are the problems I couldn't solve listed above.  The lightbox, Skills section animation, and the hamburger nav dropdown were the 3 challenges that took the most time and brain power.

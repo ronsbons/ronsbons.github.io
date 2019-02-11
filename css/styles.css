@@ -139,6 +139,7 @@ nav {
 
 /* To make picture in column 1 resize to the width of its parent column */
 .about-col img {
+  border-radius: 5px;
   width: 100%;
 }
 
@@ -215,6 +216,7 @@ footer p {
   margin: 0 .63em;
 }
 
+.fa-github-square,
 .fa-linkedin,
 .fa-instagram {
   color: black;
@@ -222,6 +224,7 @@ footer p {
 }
 
 
+.fa-github-square:hover,
 .fa-linkedin:hover,
 .fa-instagram:hover {
   color: white;
