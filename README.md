@@ -43,6 +43,7 @@ Finally, I went back to my CSS file to apply more styles to my liking.
 ---
 ## Unsolved Problems
 - Getting all images in the carousel to be the same size, and therefore not interrupting the placement of the captions.
+- None of the Boostrap components work when visiting the site hosted on Github.
 - Lightbox
 - Getting the nav links to highlight and scroll to the top of the section vs. at or after the section's headline
 - Although I changed the nav active styles, Bootstrap's native active styles seem to linger for a second, primarily the whole link having a background color of white.
