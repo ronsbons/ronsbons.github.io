@@ -43,7 +43,6 @@ Finally, I went back to my CSS file to apply more styles to my liking.
 ---
 ## Unsolved Problems
 - Getting all images in the carousel to be the same size, and therefore not interrupting the placement of the captions.
-- Lightbox
 - Getting the nav links to highlight and scroll to the top of the section vs. at or after the section's headline
 - Although I changed the nav active styles, Bootstrap's native active styles seem to linger for a second, primarily the whole link having a background color of white.
 - Getting the nav to collapse into a dropdown hamburger menu upon resizing the window.  If you set the window to a normal size before loading the page, the nav appears normally, but if you resize it to a smaller window, the nav links do not collapse into the hamburger icon.  However, if you were to leave the window at the smaller size and reload or load the page, the hamburger contains the dropdown menu.  But upon resizing it back to a larger size, the hamburger icon and the full nav disappear completely.
@@ -58,3 +57,5 @@ Without fail, I struggle with flexbox, so I was very happy to achieve the flexbo
 I searched for methods to create a carousel from scratch, but struggled with the tutorials and community posts I found.  I let myself look at the given Bootstrap version, and it all made sense and worked!  However, no matter how many times I attempted at creating a modal to create a lightbox, I did not succeed.  I tried Bootstrap's modal component; I googled other modal and lightbox tutorials.
 
 My biggest challenges are the problems I couldn't solve listed above.  The lightbox, Skills section animation, and the hamburger nav dropdown were the 3 challenges that took the most time and brain power.
+
+After viewing classmates' projects and discussing their challenges, I was able to see how they achieved some of the functionality that I could not.  Leo shared a very helpful link to an external lighbox gallery plugin for Bootstrap that I could've sworn I had come across before!, but probably was reading it when I was already tired or frustrated so I didn't fully comprehend.  In the eleventh hour, I tried it and the lightbox finally worked!
